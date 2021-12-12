@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Desarrollo web en entorno servidor - Unidad 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark"
+            style="background-image: url(../sintitulo.jpg); background-size: cover; background-blend-mode:soft-light">
+            <div class="container-fluid">
+                <a class="navbar-brand active" href="inicio.html">DWES - Unidad 2</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="1_test/inicio.php">Ejercicio 1 - Test online</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ejercicio 2 - Reservas online de coches</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="##">Ejercicio 3 - Pizzería online</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container" style="padding-top: 80px; padding-bottom: 30px; height: 90vh; overflow-y: auto">
+        <h1>¡Bienvenido a la Unidad 2 de Desarrollo web en entorno servidor!</h1>
+        <br />
+        <p>Los ejercicios propuestos en esta unidad son los que se explican a continuación. Las características comunes
+            a los tres ejercicios son las siguientes:</p>
+        <ul>
+            <li>Incluir una página de registro o alta como usuario nuevo</li>
+            <li>Inicio de sesión tanto para el rol de usuario como para el rol de administrador</li>
+            <li>Una vez iniciada la sesión como usuario, proporcionar un servicio al cliente</li>
+            <li>Una vez iniciada la sesión como administrador, proporcionar un servicio al empresario</li>
+            <li>Generar un informe recogiendo la información de una base de datos (PosgreSQL o MariaDB)</li>
+            <li>Cerrar sesión tanto como usuario como administrador</li>
+            <li>La recogida de datos de los formularios debe ser segura (validación, filtración, saneamiento, etc.)</li>
+            <li>Opcional: todos los documentos tienen que estar validados en XHTML 5.2, CSS 3 y WCAG 2.0 AAA</li>
+            <li>Opcional: subir las tres aplicaciones a la plataforma Heroku (para evaluar el funcionamiento) y a GitHub
+                (para evaluar el código)</li>
+        </ul>
+        <p><b>Enlaces Heroku:</b></p>
+        <a href="http://ccer-tarea1.herokuapp.com/">http://ccer-tarea1.herokuapp.com/</a><br />
+        <a href="http://ccer-tarea2.herokuapp.com/">http://ccer-tarea2.herokuapp.com/</a><br /><br />
+        <p><b>Enlaces GitHub:</b></p>
+        <a href="https://github.com/ercc75/ccer-tarea1/">https://github.com/ercc75/ccer-tarea1/</a><br />
+        <a href="https://github.com/ercc75/ccer-tarea2/">https://github.com/ercc75/ccer-tarea2/</a><br />
+
+        <br />
+        <p style="font-weight: bold">Ejercicio 1. Sistema de test online:</p>
+        <p>El usuario iniciará sesión y realizará una prueba online tipo test sobre PHP (mínimo 10 preguntas). El test
+            tendrá un máximo de 3 intentos. Tiene que haber preguntas con respuestas únicas (radio) o múltiples
+            (checkbox). El profesor, con rol administrador, iniciará sesión y podrá comprobar las respuestas y la nota
+            de cada alumno y podrá generar un informe. Dicho informe mostrará las notas de cada alumno y estadísticas
+            como nota media, moda, varianza, desviación típica, pregunta con más aciertos, pregunta con más fallos, etc.
+        </p>
+        <br />
+        <p style="font-weight: bold">Ejercicio 2. Reservas online de coches:</p>
+        <p>El usuario (cliente) iniciará sesión y realizará una reserva online de un coche desde y hasta una fecha
+            determinada a partir de un catálogo de 10 coches diferentes. El usuario no podrá reservar un coche
+            determinado desde y hasta una fecha determinada si se encuentra reservado algún momento entre esas fechas.
+            El administrador (empresario) iniciará sesión y podrá comprobar todas las reservas de sus clientes y podrá
+            generar un informe. Dicho informe mostrará las reservas de cada cliente y estadísticas como número de veces
+            que ha reservado, cuántos días ha reservado, qué coche ha reservado más veces, etc.
+        </p>
+        <br />
+        <p style="font-weight: bold">Ejercicio 3. Pizzería online:</p>
+        <p>El usuario (cliente) iniciará sesión y realizará un pedido online de una o varias pizzas y podrá elegir hasta
+            10 ingredientes o hasta 5 especialidades diferentes. El usuario podrá añadir/eliminar ingredientes/pizzas y
+            vaciar la cesta de la compra para empezar de nuevo. El administrador (empresario) iniciará sesión y podrá
+            comprobar todos los pedidos de sus clientes y podrá generar un informe. Dicho informe mostrará los pedidos
+            de cada cliente y estadísticas como precio medio del pedido, el ingrediente más y menos solicitado, la
+            especialidad más y menos solicitada, etc.
+        </p>
+        <br />
+        <p style="text-align: right;"><a href="inicio.html">Ir al principio</a></p>
+    </div>
+
+    <footer>
+        <div class="container-fluid text-center p-3" style="background-color: lightgrey;">
+            <p> Eduardo Rafael Cañizares Caballero - 2º DAWS - 2021</p>
+        </div>
+    </footer>
+</body>
+
+</html>
